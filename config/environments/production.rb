@@ -19,7 +19,7 @@ config.action_controller.perform_caching             = true
 
 # Log level is set to :info by default which is the minimum to let you know what
 # is going on but without being chatty and therefore slow.
-config.log_level = :info
+config.log_level = :warn
 
 # When true will use Amazon's Simple Storage Service on your production machine
 # instead of the default file system for resources and images
