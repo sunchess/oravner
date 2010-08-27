@@ -1,2 +1,2 @@
 #!/bin/bash
-script/server -p3020 #-e production
+script/server -p3020 -e production
