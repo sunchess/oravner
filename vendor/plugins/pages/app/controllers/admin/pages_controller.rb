@@ -27,6 +27,7 @@ protected
   def expire_menu_fragment_caching
     Rails.cache.delete("#{Refinery.base_cache_key}_menu_pages")
     expire_fragment %r{#{RefinerySetting.find_or_set(:refinery_menu_cache_action_suffix, "site_menu")}}
+    expire_fragment %r{#{RefinerySetting.find_or_set(:refinery_menu_cache_action_suffix_bot, "site_menu_bot")}}
   end
 
   def expire_action_caching
