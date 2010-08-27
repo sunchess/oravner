@@ -1,0 +1,11 @@
+<%
+  css = (css = css_for_menu_branch(menu_branch, menu_branch_counter)).any? ? " class='#{css.join(' ')}'" : nil
+  dom_id = (menu_branch.parent_id.nil? and menu_branch.title.present?) ? " id='item_#{menu_branch_counter}'" : nil
+-%>
+<span<%= css -%><%= dom_id -%>>
+  <%= link_to menu_branch.title, menu_branch.url, :class=>"menu" %> 
+  <% unless menu_branch_counter == sibling_count -%>
+      <img src="/images/line.gif" align="absmiddle" width="29" height="16" border="0">   
+  <% end -%>
+ 
+</span>

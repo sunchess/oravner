@@ -1,0 +1,17 @@
+<% if @page %>
+<% parent = @page.parent || @page  %>
+<% end %>
+<% if parent %>
+<% if parent.custom_title =~ /menu/ %>
+  <% parent = @page %>
+  <% menu = true %>
+<% end %>
+ <div class="txt_1"><%= parent.title %></div>
+ <% unless menu %>
+  <% parent.children.each do | menu_branch | -%>
+    <div class="bord_5" align="center"> <%= link_to menu_branch.title, menu_branch.url %> </div>
+  <% end -%>
+<% else %>
+  <div class="pad_1" > <%= parent[:side_body] %> </div>
+<% end %>
+<% end %>

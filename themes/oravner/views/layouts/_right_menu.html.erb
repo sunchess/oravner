@@ -1,0 +1,11 @@
+
+<% parent =  Page.find_by_custom_title('sidemenu')  %>
+
+<% parent.children.each_with_index do | menu_branch, idx | -%>
+  <div class="<%= idx == 0 ? "bord_3" : "bord_1"%>"> 
+    <img src="/images/ar.gif" width="55" height="22" align="absmiddle">
+    <%= link_to menu_branch.title, menu_branch.url, :class=> "menu_left" %> 
+  </div>
+<% end -%>
+
+

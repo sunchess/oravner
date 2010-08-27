@@ -1,0 +1,11 @@
+<%
+  css = (css = css_for_menu_branch(footer_menu_branch, footer_menu_branch_counter)).any? ? " class='#{css.join(' ')}'" : nil
+  dom_id = (footer_menu_branch.parent_id.nil? and footer_menu_branch.title.present?) ? " id='item_#{footer_menu_branch_counter}'" : nil
+-%>
+<span<%= css -%><%= dom_id -%>>
+  <%= link_to footer_menu_branch.title, footer_menu_branch.url, :class=>"menu_bot" %> 
+  <% unless footer_menu_branch_counter == sibling_count -%>
+      <img src="/images/line_bot.gif" width="18" height="15" align="absmiddle">
+  <% end -%>
+ 
+</span>

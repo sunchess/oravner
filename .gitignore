@@ -1,0 +1,67 @@
+# Rails
+.bundle
+db/*.sqlite3
+*.log
+tmp/**/*
+
+# Documentation
+doc/api
+doc/app
+doc/*
+.yardoc
+.yardopts
+
+# Public Uploads
+public/system/*
+public/themes/*
+
+# Public Cache
+public/javascripts/cache
+public/stylesheets/cache
+
+# Vendor Cache
+vendor/cache
+
+# Acts as Indexed
+index/**/*
+
+# Refinery Specific
+*.tmproj
+*.autobackupbyrefinery.*
+/refinerycms-*.gem
+
+# Mac
+.DS_Store
+
+# NetBeans
+nbproject
+
+# Eclipse
+.project
+
+# Redcar
+.redcar
+tags
+
+# Rubinius
+*.rbc
+
+# Vim
+*.swp
+*.swo
+
+# RubyMine
+.idea
+
+# Backup
+*~
+
+# Capybara Bug
+capybara-*html
+
+#===REMOVED DURING REFINERY GEM INSTALL===
+# Development Specific
+config/database.yml
+config/amazon_s3.yml
+config/rackspace_cloudfiles.yml
+#===END OF REMOVED DURING REFINERY GEM INSTALL===
