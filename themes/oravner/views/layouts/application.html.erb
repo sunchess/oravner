@@ -33,17 +33,16 @@
   <tr>
     <td valign="top"><table class="marg_1" align="center" cellpadding="0" cellspacing="0" border="0" width="980">
         <tr>
-          <td valign="top" width="265"><div class="col_1">
-              
+          <td valign="top" width="265">
+                    
            <% if params[:controller] == "pages"  and params[:action] == "home" -%>
-            <div class="txt_1">О нас</div>
              <%= render :partial => 'layouts/about_us' %>
            <% else -%>
             <%= render :partial => 'layouts/item_menu' %>
            <% end -%>
-           </div>
-           
-                     <td width="42"></td>
+
+          </td>
+           <td width="42"></td>
           <td width="422" valign="top">
           <div style='margin-left:10px;'><%= yield %></div>
           

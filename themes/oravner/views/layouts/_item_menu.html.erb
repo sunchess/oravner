@@ -6,7 +6,7 @@
   <% parent = @page %>
   <% menu = true %>
 <% end %>
- <div class="txt_1"><%= parent.title %></div>
+<div class="col_1"> <div class="txt_1"><%= parent.title %></div></div>
  <% unless menu %>
   <% parent.children.each do | menu_branch | -%>
     <div class="bord_5" align="center"> <%= link_to menu_branch.title, menu_branch.url %> </div>
