@@ -34,11 +34,11 @@ form{margin:0px; padding:0px;}
 .posit_1{position:relative;}
 .posit_2{position:absolute; top:-41px;}
 
-.bg{background: url(../images/bg.gif) repeat-x bottom #f1f1f1;}
-.bg_top{background: url(../images/bg_top.gif) repeat-x top;}
-.bg_left{background: url(../images/bg_left.jpg) no-repeat top right;}
-.bg_right{background: url(../images/bg_right.jpg) no-repeat top left;}
-.bg_menu{background: url(../images/bg_menu.gif) repeat-x top; height:36px;}
+.bg{background: url(/images/bg.gif) repeat-x bottom #f1f1f1;}
+.bg_top{background: url(/images/bg_top.gif) repeat-x top;}
+.bg_left{background: url(/images/bg_left.jpg) no-repeat top right;}
+.bg_right{background: url(/images/bg_right.jpg) no-repeat top left;}
+.bg_menu{background: url(/images/bg_menu.gif) repeat-x top; height:36px;}
 
 .col_1{background-color:#143572; width:268px; height:46px;}
 .col_2{background-color:#f2b90a; width:223px; height:46px;}
