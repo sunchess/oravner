@@ -1,11 +1,15 @@
-<div class="col_2">
 
-          <% page =  Page.find_by_title('Спонсорам')  %>
-          <div class="txt_3"><%= page.title %></div>
-            </div>
-            <div class="col_3">
-              <div class="pad_1">
-                <%= truncate(page[:body], :length =>290)  %>
-              <div align="right"><%= link_to "Далее...", page.url %></div>
-            </div>
-            </div>
+<% page =  Page.find_by_title('Спонсорам')  %>
+<% if page %>
+    
+  <div class="col_2">
+
+  <div class="txt_3"><%= page.title %></div>
+  </div>
+  <div class="col_3">
+    <div class="pad_1">
+      <%= truncate(page[:body], :length =>290)  %>
+      <div align="right"><%= link_to "Далее...", page.url %></div>
+    </div>
+  </div>
+<% end %>
