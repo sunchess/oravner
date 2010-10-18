@@ -3,7 +3,7 @@ body {
 margin: 0px;
 padding: 0px; 
 	font-family:"Trebuchet MS", Verdana, Arial, sans-serif;
-	font-size:12px;
+	font-size:14px;
 	color: #323232;
 	background-color:#f1f1f1;
     }
@@ -11,12 +11,12 @@ padding: 0px;
 table,p,td,div
 { 
 	font-family:"Trebuchet MS", Verdana, Arial, sans-serif;
-	font-size:12px;
+	font-size:14px;
 	color: #323232;
 }	
 
 a{	font-family:"Trebuchet MS", Verdana, Arial, sans-serif;
-	font-size:12px;
+	font-size:14px;
 	color: #3e72a7;
 	text-decoration:underline;}	
 
